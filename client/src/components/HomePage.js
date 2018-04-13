@@ -5,6 +5,7 @@ import LoginSignup from './LoginSignup'
 
 
 
+
 class HomePage extends Component {
   render() {
     return (
@@ -13,6 +14,7 @@ class HomePage extends Component {
   <button className="help btn-flat">Help</button>
   <button className="bookNow btn-large btn-flat">Book Now</button>
   <LoginSignup />
+
     </div>
     )
   }
