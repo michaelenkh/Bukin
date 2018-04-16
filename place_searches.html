@@ -71,7 +71,7 @@
             }
         }
 
-    var x = document.getElementById("demo");
+    var x = document.getElementById("bookNow");
         function getLocation() {
                 if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(showPosition);
@@ -101,7 +101,7 @@
             });
 
             google.maps.event.addListener(marker, 'click', function () {
-                infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + 'Rating: ' + place.rating + '<br><a>Address: ' + place.vicinity + '</a');
+                infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + 'Rating: ' + place.rating + '<br><a>Address: ' + place.vicinity + '</a><br><button>Button</button>');
                  infowindow.open(map, this);
             });
         }
@@ -109,13 +109,11 @@
 </head>
 
 <body>
-    <div id="map"></div>    
     
-    <p>Click the button to get your coordinates.</p>
 
-    <button onclick="getLocation()">Click here</button>
-
-    <p id="demo"></p>
+    <button onclick="getLocation()">Current Location</button>
+    <p id="bookNow"></p>
+    <div id="map"></div>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDioNsnAqqyJkUjn9OnrhXUqS8CxDL5IdY&libraries=places&callback=initMap" async defer></script>
 </body>

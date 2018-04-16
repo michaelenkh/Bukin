@@ -18,5 +18,13 @@
   "devDependencies": {},
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mangode0808/Bukin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mangode0808/Bukin/issues"
+  },
+  "homepage": "https://github.com/mangode0808/Bukin#readme"
 }
