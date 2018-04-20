@@ -5,7 +5,8 @@ Introducing Bukin where you can make your next appointment at a salon in a easy 
 My teammate Mango and I have worked little over a week on this project.
 
 As of now, when you enter the website:
-We only have our Book now button working.
+
+    We only have our Book now button working.
 
     This button will allow you to get your current location and look for beauty salons around you in 1 mile.
     Then when you are ready to make an appointment, you should be able to register your name, phone and email with the date and time for the appointment to be set.
