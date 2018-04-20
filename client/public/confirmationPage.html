@@ -13,36 +13,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
 
 
-  <style>
-    #map {
-      height: 400px;
-      width: 100%;
-      margin-left: 0;
-      margin-top: 100px;
-      position: absolute;
-    }
-  </style>
+  <!-- <script>
+        //------------------------------- All the buttons from html --------------------------
+          $(document).ready(function () {
+            getLocation();
 
-  <script>
-    //------------------------------- All the buttons from html --------------------------
-    $(document).ready(function () {
-      getLocation();
+            $(".bookNow").click(function () {
+              $("#map").attr("style", "overflow: hidden; display: '';");
+            });
 
-      $(".bookNow").click(function () {
-        $("#map").attr("style", "overflow: hidden; display: '';");
-      });
-
-      $(".confirmButton").click(function () {
-        $('#confirmDiv').attr("style", "display: '';")
-      });
-
-      $('.help').click(function () {
-        $("#map").attr("style", "overflow: hidden; display: 'none';");
-      });
-
-    });
-
-    
+            $(".confirmButton").click(function () {
+              $('#confirmDiv').attr("style", "display: '';")
+            });
+          });
     //-------------------- Google Map Api -------------------------
     var map;
     var infowindow;
@@ -122,7 +105,7 @@
       });
 
       google.maps.event.addListener(marker, 'click', function () {
-        infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + 'Rating: ' + place.rating + '<br><a>Address: ' + place.vicinity + "</a><br><button href='../file/views/index.html'>Book Now</button>");
+        infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + 'Rating: ' + place.rating + '<br><a>Address: ' + place.vicinity + "</a><br><button href='/file/views/index.html'>Book Now</button>");
         infowindow.open(map, this);
       });
     }
@@ -144,45 +127,39 @@
     // });
 
 
-  </script>
+  </script> -->
 </head>
 
 <body>
   <!-- React components will render here -->
-  <div id="root"></div>
+  <!-- <div id="root"></div> -->
   <!-- Google API will render here -->
-  <div id="map" style="display: none;"></div>
-  <div id="error"></div>
+  <!-- <div id="map" style="display: none;"></div> -->
+  <!-- <div id="error"></div> -->
 
-  <div id="confirmDiv" class="confirmDiv" style="display: none;">
+  <div id="confirmDiv" class="confirmDiv">
 
-    <i class="material-icons prefix">person</i>
-    <input placeholder="Fullname..." name="name" type="text" id="name">
+            <i class="material-icons prefix">person</i>
+            <input placeholder="Fullname..." name="name" type="text" id="name">
 
-    <i class="material-icons prefix">email</i>
-    <input id="email" type="email" class="email" placeholder="Your@mail.com">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="email" class="email" placeholder="Your@mail.com">
 
-    <i class="material-icons prefix">phone_iphone</i>
-    <input type="tel" name="number" id="number" placeholder="1(123) 123-2131">
+              <i class="material-icons prefix">phone_iphone</i>
+              <input type="tel" name="number" id="number" placeholder="1(123) 123-2131">
 
+  
+            <i class="material-icons">date_range</i>
+            <input type="date" name="date-picker" class="datepicker" id="datepicker" />
 
-    <i class="material-icons">date_range</i>
-    <input type="date" name="date-picker" class="datepicker" id="datepicker" />
+            <i class="material-icons">access_time</i>
+            <input type="time" name="time-picker" class="timepicker" id="timepicker" />
 
-    <i class="material-icons">access_time</i>
-    <input type="time" name="time-picker" class="timepicker" id="timepicker" />
+          <input type="button" id="button" value="confirm" class="button">
+          <p class="response"></p>
 
-    <input type="button" id="button" value="confirm" class="button">
-    <p class="response"></p>
+    </div>
 
-  </div>
-  <script>
-    function myFunction() {
-      document.getElementById("confirmDiv");
-    }
-
-
-  </script>
   </div>
   <!--
       This HTML file is a template.

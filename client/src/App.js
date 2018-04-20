@@ -1,12 +1,16 @@
 import React from 'react';
-import HomePage from './components/HomePage'
-import LoginSignup from './components/LoginSignup'
-// import './App.css';
+import BackgroundVideo from './components/backgroundVideo' 
+import HomePage from './components/homePage';
+import ModalWindow from './components/ModalWindow'
 
-const App = props => {
-<div>
-  <HomePage />
-  <LoginSignup />
-</div>
-}
+const App = () => (
+
+    <div>
+        <BackgroundVideo />
+        <HomePage />
+        <ModalWindow />             
+    </div>
+);
+
 export default App;
+

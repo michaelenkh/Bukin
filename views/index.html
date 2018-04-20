@@ -24,25 +24,23 @@
   </style>
 
   <script>
-    //------------------------------- All the buttons from html --------------------------
-    $(document).ready(function () {
-      getLocation();
+        //------------------------------- All the buttons from html --------------------------
+          $(document).ready(function () {
+            getLocation();
 
-      $(".bookNow").click(function () {
-        $("#map").attr("style", "overflow: hidden; display: '';");
-      });
+            $(".bookNow").click(function () {
+              $("#map").attr("style", "overflow: hidden; display: '';");
+            });
+          });
 
-      $(".confirmButton").click(function () {
-        $('#confirmDiv').attr("style", "display: '';")
-      });
+            $(".confirmButton").click(function () {
+              $('#confirmDiv').attr("style", "display: '';")
+            });
 
-      $('.help').click(function () {
-        $("#map").attr("style", "overflow: hidden; display: 'none';");
-      });
-
-    });
-
-    
+            $('.help').click(function () {
+              $("#map").attr("style", "display: 'none';");
+            });
+          
     //-------------------- Google Map Api -------------------------
     var map;
     var infowindow;
@@ -154,35 +152,35 @@
   <div id="map" style="display: none;"></div>
   <div id="error"></div>
 
-  <div id="confirmDiv" class="confirmDiv" style="display: none;">
+  <div id="confirmDiv" class="confirmDiv">
 
-    <i class="material-icons prefix">person</i>
-    <input placeholder="Fullname..." name="name" type="text" id="name">
+            <i class="material-icons prefix">person</i>
+            <input placeholder="Fullname..." name="name" type="text" id="name">
 
-    <i class="material-icons prefix">email</i>
-    <input id="email" type="email" class="email" placeholder="Your@mail.com">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="email" class="email" placeholder="Your@mail.com">
 
-    <i class="material-icons prefix">phone_iphone</i>
-    <input type="tel" name="number" id="number" placeholder="1(123) 123-2131">
+              <i class="material-icons prefix">phone_iphone</i>
+              <input type="tel" name="number" id="number" placeholder="1(123) 123-2131">
 
+  
+            <i class="material-icons">date_range</i>
+            <input type="date" name="date-picker" class="datepicker" id="datepicker" />
 
-    <i class="material-icons">date_range</i>
-    <input type="date" name="date-picker" class="datepicker" id="datepicker" />
+            <i class="material-icons">access_time</i>
+            <input type="time" name="time-picker" class="timepicker" id="timepicker" />
 
-    <i class="material-icons">access_time</i>
-    <input type="time" name="time-picker" class="timepicker" id="timepicker" />
+          <input type="button" id="button" value="confirm" class="button">
+          <p class="response"></p>
 
-    <input type="button" id="button" value="confirm" class="button">
-    <p class="response"></p>
-
-  </div>
-  <script>
-    function myFunction() {
+    </div>
+<script>
+   function myFunction() {
       document.getElementById("confirmDiv");
     }
 
 
-  </script>
+</script>
   </div>
   <!--
       This HTML file is a template.

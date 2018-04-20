@@ -1,9 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import HomePage from './components/HomePage'
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
-ReactDOM.render(
-  <HomePage />,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById("root"));

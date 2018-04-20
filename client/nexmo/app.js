@@ -19,7 +19,7 @@ app.set('view engine', 'html');
 app.engine('html', ejs.renderFile);
 
 // Public folder setup
-app.use(express.static(__dirname + '/client/confirmationPage'));
+app.use(express.static(__dirname + '/public'));
 
 // Body parser middleware
 app.use(bodyParser.json());
