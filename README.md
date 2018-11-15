@@ -2,7 +2,7 @@
 
 Introducing Bukin where you can make your next appointment at a salon in a easy and simple way at your fingers.
 
-My teammate Mango and I have worked little over a week on this project.
+We have worked little over a week on this project.
 
 As of now, when you enter the website:
 
